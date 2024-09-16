@@ -6,7 +6,7 @@ function launchMission() {
     document.getElementById('ship-ready').classList.remove('big');
 
     // Log all the <li> elements (mission checks) to the console
-    const missionChecks = document.getElementsByTagName('ul li');
+    const missionChecks = document.querySelectorAll('ul li');
     missionChecks.forEach(check => console.log(check.textContent));
 
     // Update the mission destination link href and text
