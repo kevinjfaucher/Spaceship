@@ -1,0 +1,22 @@
+/* Styles for the large text and color */
+.big {
+    font-size: 200%;
+    color: limegreen;
+}
+
+/* Adding a smooth transition to all paragraph elements */
+p {
+    transition: all 400ms;
+}
+
+/* Styling for countdown and mission complete paragraphs */
+#countdown, #mission-complete {
+    border: 2px solid red;
+    border-radius: 5px;
+    padding: 4px 8px;
+}
+
+#mission-complete {
+    border-color: yellow;
+    display: none; /* Initially hide the mission complete paragraph */
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Adventure</title>
+   
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Greetings, _______ from Earth!</h1>
+
+    <!-- 
+    
+    <label>: This is an HTML element used to provide a caption or description for a form control, like an <input>. 
+    It's especially important for accessibility since it tells screen readers what the input field is for.
+
+    for="name-input": The for attribute connects the label with the form element that has the corresponding id. 
+    In this case, it connects the label to the <input> element with the id="name-input". 
+
+    This means when the user clicks the text "Astronaut name:", the focus will 
+    automatically shift to the associated input field. This improves usability.
+
+
+    -------------------------------------------
+
+    <input>: This is an HTML form element that allows the user to input data, in this case, their name.
+
+    id="name-input": The id attribute gives this input a unique identifier that allows other elements (like the <label>) 
+    or JavaScript to reference it. This is how the <label> knows which input to associate with.
+
+    placeholder="Enter your name, space traveler!": This attribute provides a hint inside the input field to let 
+    the user know what kind of information is expected. It disappears once the user starts typing. 
+    In this case, it prompts the user to "Enter your name, space traveler!"
+    
+    
+    -->
+    <p>
+        <label for="name-input">Astronaut name: </label>
+        <input id="name-input" placeholder="Enter your name, space traveler!" />
+
+        <button onclick="launchMission()">Launch Mission!</button>
+    </p>
+
+    <p id="countdown">Countdown to blast-off: 3... 2... 1... 🚀</p>
+    <p id="mission-complete">Mission complete! 🌌</p>
+    <p id="prepare-ship">Prepare the ship for launch!</p>
+    <p id="ship-ready" class="big">Ship ready for launch!</p>
+    
+    <p>
+        Mission destination: <a class="destination-link" href="unknown-destination">Unknown</a>
+    </p>
+
+    <ul>
+        <li>Fuel check</li>
+        <li>Systems check</li>
+        <li>Coordinates set</li>
+    </ul>
+
+    
+    <script src="script.js"></script>
+
+</body>
+</html>
